@@ -37,8 +37,6 @@ def CreateGDPS(url: str) -> bool:
         for line in f:
             line = line.replace(robtop.encode('utf-8'), url.encode('utf-8'))
             line = line.replace(encode(robtop),         encode(url)        )
-            with open('test.txt', 'ab') as fw:
-                fw.write(line)
             data += line
 
         log('replacing base64 links')
