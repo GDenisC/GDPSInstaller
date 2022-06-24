@@ -2,7 +2,10 @@ import urllib.request as req
 from pathlib import Path
 import os
 import patoolib
-import patoolib.programs.rar # fix
+# .exe fixes
+import patoolib.programs.rar
+import patoolib.programs.p7zip
+#
 from shutil import rmtree
 from logs import log
 
